@@ -12,18 +12,25 @@ const int LED_R = 2;
 const int LED_G = 3;
 const int LED_B = 4;
 const int buzzer = 9; //buzzer to arduino pin 9
+
+
  
 void setup()
 {
-   pinMode(buzzer, OUTPUT);
-   pinMode(LED_R, OUTPUT);
-   pinMode(LED_G, OUTPUT);
-   pinMode(LED_B, OUTPUT);
-   Serial.begin(9600);
+  pinMode(buzzer, OUTPUT);
+  pinMode(LED_R, OUTPUT);
+  pinMode(LED_G, OUTPUT);
+  pinMode(LED_B, OUTPUT);
+
+
+  Serial.begin(9600);
 }
 void loop()
 {
  
+  analogWrite(LED_R,   255);
+  analogWrite(LED_G, 255);
+  analogWrite(LED_B,  255);
    if(Serial.available())
    {
        ch = Serial.read();  //Read the serial data
@@ -54,10 +61,7 @@ void loop()
         delay(500);
         noTone(buzzer);
        }
-      analogWrite(LED_R,   255);
-      analogWrite(LED_G, 255);
-      analogWrite(LED_B,  255);
-      delay(1000);  
+
+ 
    }
 }
-
