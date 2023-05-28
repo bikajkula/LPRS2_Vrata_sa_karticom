@@ -1,5 +1,6 @@
 //Receiver (Rx) Arduino Board Code
 
+
 #define LED_ON    HIGH
 #define LED_OFF   LOW 
 
@@ -32,28 +33,31 @@ void loop()
           analogWrite(LED_R,   0);
           analogWrite(LED_G, 255);
           analogWrite(LED_B,  0);
-          tone(buzzer, 500); // Send 1KHz sound signal...
-          delay(200);        // ...for 1 sec
-          tone(buzzer, 500); // Send 1KHz sound signal...
-          delay(200);        // ...for 1 sec
-          tone(buzzer, 500); // Send 1KHz sound signal...
-          delay(1000);        // ...for 1 sec
-          noTone(buzzer);     // Stop sound...
-          delay(1000);        // ...for 1sec
+          tone(buzzer,5*659,2000);
+          delay(250);
+          tone(buzzer,5*659,2000);
+          delay(500);
+          tone(buzzer,5*698,2000);
+          delay(500);
+          noTone(buzzer);
         }
        else{
         Serial.println("DENIED");
         analogWrite(LED_R,   255);
         analogWrite(LED_G, 0);
         analogWrite(LED_B,  0);
-        tone(buzzer, 1000); // Send 1KHz sound signal...
-        delay(1000);        // ...for 1 sec
-        noTone(buzzer);     // Stop sound...
-        delay(2000);
+        tone(buzzer,262,250);
+        delay(500);
+        tone(buzzer,196,250);
+        delay(500);
+        tone(buzzer,196,250);
+        delay(500);
+        noTone(buzzer);
        }
-       analogWrite(LED_R,   255);
-        analogWrite(LED_G, 255);
-        analogWrite(LED_B,  255);
-       delay(1000);  
+      analogWrite(LED_R,   255);
+      analogWrite(LED_G, 255);
+      analogWrite(LED_B,  255);
+      delay(1000);  
    }
 }
+
