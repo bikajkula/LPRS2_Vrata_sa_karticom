@@ -1,6 +1,6 @@
 # LPRS2 2023 - VRATA SA KARTICOM
 
-#Vrata sa karticom
+Vrata sa karticom
 
 #O projektu
 ```
