@@ -13,3 +13,7 @@ neodobrene kartice, Buzzer daje različite zvukove, LED lampica svetli zeleno/cr
 # Kako to izgleda u praksi
 
 https://www.youtube.com/watch?v=yas0ItAhhII&ab_channel=BA
+
+# Šema
+
+![Untitled Sketch 2_bb](https://github.com/bikajkula/LPRS2_Vrata_sa_karticom/assets/20746024/8daa2849-363e-4671-9346-68bf705f4be5)
