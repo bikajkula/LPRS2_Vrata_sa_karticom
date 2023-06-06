@@ -17,3 +17,6 @@ https://www.youtube.com/watch?v=yas0ItAhhII&ab_channel=BA
 # Šema
 
 ![Untitled Sketch 2_bb](https://github.com/bikajkula/LPRS2_Vrata_sa_karticom/assets/20746024/8daa2849-363e-4671-9346-68bf705f4be5)
+
+
+[Source fajlovi šeme rađene u ,,fritzing"-u](https://github.com/bikajkula/LPRS2_Vrata_sa_karticom/tree/main/HW/IoT/Vrata%20s%20karticom)
