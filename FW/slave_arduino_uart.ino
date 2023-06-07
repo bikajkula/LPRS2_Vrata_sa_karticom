@@ -8,9 +8,9 @@ char ch;               //Initialized variable to store receive
 
 
 // Arduino digital pins that control red, green and blue colors:
-const int LED_R = 2;
+const int LED_R = 4;
 const int LED_G = 3;
-const int LED_B = 4;
+const int LED_B = 2;
 const int buzzer = 9; //buzzer to arduino pin 9
 const int doorPin = 7;
 
